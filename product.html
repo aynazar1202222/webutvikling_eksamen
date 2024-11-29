@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ikoner/css/fontawesome.css">
+    <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/brands.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Produkter</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header>
+            <nav>
+                <section id="søk">
+                    <form>
+                        <label for="search"></label>
+                        <input type="search" placeholder="Søk her" id="search">
+                        <input type="submit" value="søk">
+                    </form>
+                </section>
+                <section id="toppmeny">
+                    <a href="index.html">Hjem</a>
+                    <a href="file:///C:/Users/aynaz/Desktop/Eksamen/index.html#mest_populær_produkter">Produkter</a>
+                    <a href="index.html"><h1>Logo</h1></a>
+                    <a href="file:///C:/Users/aynaz/Desktop/Eksamen/index.html#mest_populær_kategorier">Kategorier</a>
+                    <a href="#section2_kontakt">Kontakt oss</a> 
+                </section>
+                <section id="ikoner">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </section>
+            </nav>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem ></a></li>
+                    <li><a href="file:///C:/Users/aynaz/Desktop/Eksamen/index.html#mest_popul%C3%A6r_kategorier">Kategorier ></a></li>
+                    <li><a href=""></a>Dress</li>
+                </ul>
+            </nav> 
+
+           <section id="produkt_informasjon">
+            <div id="produktbilder">
+                <img src="bilder/produkt_bilde.jpg" alt="kjole" id="stort">
+                <section id="mindre">
+                    <img src="bilder/produkt_bilde.jpg" alt="kjole" id="mindre1">
+                    <img src="bilder/produkt_bilde.jpg" alt="kjole" id="mindre2">
+                    <img src="bilder/produkt_bilde.jpg" alt="kjole" id="mindre3">
+                </section>
+            </div>
+            <article id="informasjoner">
+                <h2>Dress</h2>
+                <ul>
+                    <li><a href="#">MERKENAVN</a></li>
+                    <li>1999kr inkl.mva.</li>
+                    <li>Farge: hvitt</li>
+                </ul>
+                <form>
+                    <select id="størrelse" >
+                        <option value="Velg_størrelser">Velg størrelser</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </form>
+                <button class="knapp_legg_i">Legg i handelkurv</button>
+                <button class="like"><i class="fa-regular fa-heart"></i></button>
+            </article>
+           </section>
+
+           <section id="mer_informasjon">
+            <!--kilde for kode details og summary: https://www.w3schools.com/tags/tag_details.asp  -->
+            <details>
+                <summary>
+                    <h3>Matrial og vedlikehod</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </details>
+            <details>
+                <summary>
+                    <h3>Produktdetaljer</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                     enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                     in reprehenderit in voluptate velit esse cillum dolore eu 
+                     fugiat nulla pariatur.
+                </p>
+            </details>
+            <details>
+                <summary>
+                    <h3>Størrelsestabell</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </summary>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+                    quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
+                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
+                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima 
+                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+                    nisi ut aliquid ex ea commodi consequatur?
+                </p>
+            </details>
+            <details>
+                <summary>
+                    <h3>Anmeldelser</h3>   
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    23
+                </summary>
+                <p>
+                    Nemo enim ipsam voluptatem quia voluptas 
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+                    dolores eos qui ratione voluptatem sequi nesciunt.
+                </p>
+            </details>
+           </section>
+
+           <h2>Lignende produkter</h2>
+           <div id="flere">
+            <a href="file:///C:/Users/aynaz/Desktop/Eksamen/index.html#mest_popul%C3%A6r_kategorier">
+                Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+           <section id="lignende_produkter">
+            <article class="produkt_2">
+                <img src="bilder/produkt_2.jpg" alt="lignende_produkt">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+                <h4>Product name</h4>
+                <p>1999kr</p>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    720 Reviews</li>
+                </ul>
+            </article>
+            <article class="produkt_2">
+                <img src="bilder/produkt_2.jpg" alt="lignende_produkt">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+                <h4>Product name</h4>
+                <p>1999kr</p>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    720 Reviews</li>
+                </ul>
+            </article>
+            <article class="produkt_2">
+                <img src="bilder/produkt_2.jpg" alt="lignende_produkt">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+                <h4>Product name</h4>
+                <p>1999kr</p>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    720 Reviews</li>
+                </ul>
+            </article>
+            <article class="produkt_2">
+                <img src="bilder/produkt_2.jpg" alt="lignende_produkt">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+                <h4>Product name</h4>
+                <p>1999kr</p>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    720 Reviews</li>
+                </ul>
+            </article>
+            <article class="produkt_2">
+                <img src="bilder/produkt_2.jpg" alt="lignende_produkt">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+                <h4>Product name</h4>
+                <p>1999kr</p>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    720 Reviews</li>
+                </ul>
+            </article>
+           </section>
+        </main>
+
+        <footer>
+            <section id="section1_logo">
+                <h3>Logo</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <section id="section2_kontakt">
+                <h4>KONTAKT</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>Adresse: B R A Veien 4, 1757 Halden</li>
+                    <li><i class="fa-solid fa-phone"></i>Telfon: 69 60 80 00</li>
+                    <li><i class="fa-solid fa-envelope"></i>E-post: halden@hiof.no</li>
+                    <li><i class="fa-solid fa-clock"></i>Åpningstider: Steger klokken 16:00</li>
+                </ul>
+            </section>
+            <section id="section3_snarvei">
+                <h4>SNARVEI</h4>
+                <ul>
+                    <li><a href="file:///C:/Users/aynaz/Desktop/Eksamen/index.html#product">Produkter</a></li>
+                    <li><a href="file:///C:/Users/aynaz/Desktop/Eksamen/index.html#mest_popul%C3%A6r_kategorier">Kategorier</a></li>
+                    <li><a href="#section2_kontakt">Kontakt oss</a></li>
+                </ul>
+            </section>
+            <section id="section4_sosiale_medier">
+                <h4>SOSIALE MEDIER</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+
+    </div>
+</body>
+</html>

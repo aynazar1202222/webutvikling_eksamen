@@ -1,0 +1,836 @@
+/*Generelt css setting*/
+html{
+    font-size: calc(0.5em + 1vw);
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 2.2rem;}
+h2{font-size: 2rem; font-weight:800;}
+h3{font-size: 1.8rem;}
+h4{font-size: 1.6rem;}
+p, a{font-size: 1.2rem;}
+
+header, nav, ul, li, a{
+    text-decoration:none;
+    color: black;
+    margin:10px;
+}
+
+header,ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+
+/*header for alle sider*/
+h2{
+    text-align: center;
+}
+
+header nav{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#toppmeny{
+    display: flex;
+    flex-direction: column;
+}
+
+#ikoner{
+    display: flex;
+    flex-direction: row;
+}
+
+form input{
+    font-size:1rem;
+    border-radius: 50px;
+    background-color: white;
+}
+
+/*størrelse, , og slid for banner*/
+#banner{
+    position:relative;
+    width:100%;
+    display: flex;
+    overflow-x:scroll; /*slider i x-aksen kilde: https://www.w3schools.com/cssref/tryit.php?filename=trycss_scroll-margin-inline*/
+    scroll-snap-type: x mandatory; /*Den skal være mandatory kilde: https://www.w3schools.com/cssref/tryit.php?filename=trycss_scroll-snap-type*/
+    scroll-behavior:smooth; /*scroller smooth kilde: https://www.w3schools.com/cssref/tryit.php?filename=trycss_scroll_behavior*/
+    padding:10px;
+    gap: 10px;
+}
+
+.slide{
+    flex:0 0 100%;
+    padding:10px;
+    position:relative;
+}
+
+.slide img{
+    width:100%;
+    height:auto;
+    border-radius: 50px;
+}
+
+.text-overlay{
+    position:absolute;
+    top:10%;
+    right:10%;
+    text-align:right;
+    color:white;
+    max-width:30%;
+}
+
+.text-overlay p{
+    font-size: 1rem;
+}
+
+.text-overlay button{
+    border-radius:50px;
+    background-color: white;
+    padding: 10px;
+}
+
+/*mest populære produkt*/
+.mest_populær_produkter{
+    text-align:center;
+    padding:10px;
+}
+
+
+.knapp_best_produkter{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    margin-bottom: 10px;
+}
+
+.knapp_best_produkter button{
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding:15px;
+    
+}
+
+.product{
+    position: relative;
+    display: inline-block;
+    margin:30px;
+}
+
+.product img{
+    border-radius: 50px;
+    width:100%;
+    margin-bottom: 40px;
+}
+
+.product a{
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    left: 10px;
+}
+
+.product button{
+    border-radius: 50px; 
+
+}
+
+.product p{
+    position: absolute;
+    bottom: 5px;
+    text-align: right;
+    right: 10px;
+    font-weight: bold;
+}
+
+
+.product ul{
+    position: absolute;
+    bottom:-20px;
+    left:1px;
+    text-align: left;
+    display: flex;
+    gap: 5px;
+}
+
+.likes{
+    position:absolute;
+    top:10px;
+    right:10px;
+    border: none;
+    color:gray;
+    max-width:30%;
+    padding:10px;
+}
+
+/*mest populær kategorier*/
+.mest_populær_kategorier{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.mest_populær_kategorier img{
+    width:100%;
+    border-radius: 50px;
+    margin-bottom:20px;
+    opacity:0.6; /* https://developer.mozilla.org/en-US/docs/Web/CSS/opacity */
+}
+
+#oppdag{
+    margin-bottom: 20px;
+}
+
+.category{
+    position: relative;
+}
+
+.category p{
+    position:absolute;
+    color: white;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:30px;
+    padding: 10px;
+}
+
+/*fikse scroll anmeldelser*/
+.anmeldelser{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll; /*slider i x-aksen kilde: https://www.w3schools.com/cssref/tryit.php?filename=trycss_scroll-margin-inline*/
+    padding: 10px;
+    scroll-snap-type: x mandatory; /*Den skal være mandatory kilde: https://www.w3schools.com/cssref/tryit.php?filename=trycss_scroll-snap-type*/
+    scroll-behavior: smooth; /*scroller smooth kilde: https://www.w3schools.com/cssref/tryit.php?filename=trycss_scroll_behavior*/
+}
+
+.anmeldelser h2{
+    position: absolute;
+    text-align: left;
+}
+
+.anmeldelser article{
+    background-color:lightgray;
+    flex:0 0 70%; /*flexbox kilde: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_flex*/
+    border-radius:30px;
+    padding:20px;
+    text-align:left;
+    position: relative;
+    margin-top: 90px;
+}
+
+.anmeldelser article img{
+    width: 70px;
+    height:70px;
+    border-radius:50px;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.navn{
+    margin-left: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.anmeldelser article p{
+    margin-left: 100px;
+}
+
+.anmeldelser article ul{
+    gap: 5px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.anmeldelser article ul li i{
+    font-size:20px;
+}
+
+/*produktside*/
+main nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+}
+
+main nav ul a{
+    color:rgb(153, 153, 153);
+}
+
+#produkt_informasjon{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#produktbilder{
+    max-width:700px;
+}
+
+#informasjoner{
+    max-width:440px;
+    text-align:center;
+}
+
+#informasjoner ul li{
+    font-weight:bold;
+}
+
+#informasjoner ul li a{
+    color: gray;
+}
+
+#størrelse{
+    background-color: white;
+    padding: 5px;
+}
+
+#informasjoner button{
+    background-color: black;
+    color: white;
+    padding:5px;
+    margin-top: 10px;
+}
+
+#produktbilder{
+    display: flex;
+    flex-direction: row;
+}
+
+#produkt_informasjon{
+    flex-direction: column;
+}
+
+#mindre{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 10px;
+    max-width: 160px;
+}
+
+#stort{
+    width:100%;
+    height: auto;
+}
+
+#mer_informasjon{
+    text-align: center;
+    color:rgb(82, 81, 81);
+    margin-top: 20px;
+}
+
+summary{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+summary h3{
+   margin:0;
+}
+
+summary i{
+    font-size: 20px;
+}
+
+
+details summary{
+    flex-direction: row;
+    gap: 30px;
+}
+
+#flere a{
+    color:blue;
+}
+
+#lignende_produkter{
+    display: flex;
+    gap: 5px;
+    overflow-x: scroll;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    margin-top: 20px;
+}
+
+
+#flere{
+    text-align: right;
+    padding: 10px;
+}
+
+.produkt_2{
+    padding:10px;
+    flex: 0 0 70%;
+    position:relative;
+    
+}
+
+.produkt_2 p{
+    position: absolute;
+    bottom: 5px;
+    font-weight: bold;
+    text-align: right;
+    right: 5px;
+}
+
+.produkt_2 h4{
+    position: absolute;
+    bottom: 10px;
+    text-align: left;
+    left: 10px;
+}
+
+.produkt_2 ul{
+    position: absolute;
+    bottom: -20px;
+    text-align: left;
+    display: flex;
+}
+
+.produkt_2 img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+/*kasse*/
+#nav_kasse{
+    display: flex;
+    padding: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.shoppingbag{
+    padding: 50px;
+}
+
+#produktkort1,
+#produktkort2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+#produktkort1 img,
+#produktkort2 img{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.produktinfo {
+    display: flex;
+    flex-direction: column;
+    font-weight:bold;
+    align-items: center;
+}
+
+#størrelse1,
+#størrelse2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#størrelse1 select, 
+#størrelse2 select{
+    padding: 0;
+    background-color: white;
+    max-width: 50px;
+}
+
+#størrelse1 p,
+#størrelse2 p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+#størrelse1 p input,
+#størrelse2 p input{
+    font-size: 10px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+
+.personopplysninger{
+    padding: 50px;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.personopplysninger form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.row_input{
+    display: flex;
+    flex-direction:column;
+}
+
+#personopplysninger button{
+    background-color: rgb(48, 48, 48);
+    color:white;
+    font-size: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#personopplysninger a{
+    font-size: 20px;
+    color:blue;
+    display: block;
+    text-align: center;
+}
+
+#levering{
+    padding: 50px;
+}
+
+#levering form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.leveringsmetoder{
+    border: 2px solid gray; /*shorthand kilde: https://www.w3schools.com/css/tryit.asp?filename=trycss_border */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.leveringsmetoder p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#betaling{
+    padding: 50px;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#bataling form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+#dato_cvv{
+    display: flex;
+    flex-direction:column;
+}
+
+#betal_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fullfør{
+    background-color: rgb(48, 48, 48);
+    color:white;
+    font-size: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*footer for alle sider*/
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#section2_kontakt ul{
+    font-weight:bold;
+}
+
+#section4_sosiale_medier ul{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+
+/*DESKTOP*/
+@media only screen and (min-width: 650px) and (max-width: 1200px){
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #toppmeny{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    #banner{
+        padding: 80px;
+        gap: 50px;
+        border: 80px;
+    }
+
+    .knapp_best_produkter button{
+        padding: 40px;
+        cursor:pointer; /* kode cursor fra: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor*/
+        font-size: 1rem;
+    }
+
+    .text-overlay button{
+        cursor:pointer;
+    }
+
+    .mest_populær_produkter .product{
+        max-width: 350px;
+        display: inline-block;
+        padding: 30px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .likes{
+        position:absolute;
+        top:40px;
+        right:40px;
+        max-width:40%;
+        padding:10px;
+        cursor:pointer;
+    }
+
+    #populær_kategori{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+    }
+
+    #kategori_1,
+    #kategori_2,
+    #kategori_3{
+        display: flex;
+        max-width: 386px; 
+        flex-direction: row;
+    }
+
+    #kategori_4{
+        max-width: 864px; 
+    }
+
+    #kategori_5{
+        max-width: 300px;
+    }
+
+    #kategori_4,
+    #kategori_5{
+        flex-direction: row;
+    }
+
+    .anmeldelser article{
+        flex: 0 0 289px;
+        margin-top: 100px;
+        
+    }
+
+    .anmeldelser article p{
+        font-size: 1rem;
+        line-height: 1;
+        margin-left: 30px;
+    }
+
+    .navn{
+        padding: 20px;
+    }
+
+    #mindre{
+        max-width: 170px;
+    }
+
+    .produkt_2{
+        flex: 0 0 289px;
+        margin-top: 100px;
+    }
+
+    .produkt_2 p, h4, ul{
+        font-size: 20px;
+    }
+
+    .knapp_legg_i{
+        cursor:pointer;
+    }
+
+    .like{
+        cursor:pointer;
+    }
+
+    #produkt_informasjon{
+        flex-direction: row;
+    }
+
+
+    .shoppingbag{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:center;
+    }
+    
+    #produktkort1, 
+    #produktkort2 {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 50px;
+        
+    }
+
+    #produktkort1 img
+    #produktkort2 img{
+        max-width:700px;
+    }
+
+    .produktinfo{
+        max-width:440px;
+       flex-direction: column;
+    }
+
+    .personopplysninger{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personopplysninger form{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #fornavn_input,
+    #etternavn_input {
+        display:flex;
+        max-width: 50%;
+        flex-direction: row;
+    }
+
+    .row_input {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .personopplysninger button{
+        max-width: 50%;
+    }
+
+    #levering{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leveringsmetoder{
+        max-width: 70%;
+        cursor:pointer;
+    }
+
+    #betaling{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    #bataling form{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #dato_cvv{
+        display:flex;
+        max-width: 50%;
+        flex-direction: row;
+    }
+
+    #fullfør{
+        max-width: 70%;
+        cursor:pointer;
+    }
+
+
+    footer{
+        padding: 80px;
+    }
+    
+
+    
+
+
+    
+    
+}
